@@ -59,7 +59,7 @@ void loop()
 
   UDP.beginPacket(sv_ip, Remote_Port);
   // UDP.write(Left_X_POS);
-  UDP.print(Left_X_POS);
+  UDP.print(String(Left_X_POS) + "," + String(Right_X_POS));
   UDP.endPacket();
 
   a ++;
